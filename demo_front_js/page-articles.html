@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo Page</title>
+    <!-- CSS FILES -->
+    <link rel="stylesheet" type="text/css" href="uikit/css/uikit.min.css">
+</head>
+
+<body>
+
+    <!--HEADER-->
+    <header class="uk-box-shadow-small" style="background-color: white">
+        <div class="uk-container uk-container-expand">
+            <nav class="uk-navbar" id="navbar" data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+                </div>
+
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Our Products</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <div class="uk-navbar-item">
+                        <a class="uk-navbar-toggle uk-hidden@m" data-uk-toggle data-uk-navbar-toggle-icon
+                            href="#offcanvas-nav"></a>
+                        <a href="#" class="uk-button uk-button-secondary uk-visible@m"><span
+                                data-uk-icon="sign-in"></span>SIGN UP</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--/HEADER-->
+
+    <!-- Container  -->
+    <section class="uk-section uk-section-default">
+        <div class="uk-container">
+            <h3 class="uk-text-bold">Articles</h3>
+            <div class="uk-overflow-auto">
+
+                <!-- Le boutton qui appel l'API -->
+                <button id="btn-api" class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom">Appel API</button>
+            
+                <!-- Le div qui va contenir les card articles  -->
+                <div id="wrapper-articles" class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+                    
+                    <!-- Une card Article -->
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3 class="uk-card-title">Titre de l'article</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="uk-section-secondary">
+        <div class="uk-container uk-section">
+            <div class="uk-grid uk-child-width-1-3@l" data-uk-grid>
+                <div>
+                    <h4>Our Company</h4>
+                    <ul class="uk-list uk-list-bullet">
+                        <li><a href="#" title="Laboris nisi ut aliquip">Laboris nisi ut aliquip</a></li>
+                        <li><a href="#" title="Excepteur sint occaecat">Excepteur sint occaecat</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="uk-section uk-section-xsmall" style="background-color: rgba(0,0,0,0.15)">
+            <div class="uk-container">
+                <div class="uk-grid uk-child-width-1-2@s uk-text-center uk-text-left@s" data-uk-grid>
+                    <div class="uk-text-small uk-text-muted">
+                        Copyright 2019 - All rights reserved.
+                    </div>
+                    <div class="uk-text-small uk-text-muted uk-text-center uk-text-right@s">
+                        <a href="https://github.com/zzseba78/Kick-Off">Created by KickOff</a> | Built with <a
+                            href="http://getuikit.com" title="Visit UIkit 3 site" target="_blank" data-uk-tooltip><span
+                                data-uk-icon="uikit"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/FOOTER-->
+    <!-- Modal -->
+    <div id="modal-loading" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+            <p class="uk-text-center">Chargement en cours...</p>
+            <img src="loading-ic.gif" style="width: 76px; position: absolute; top: 0;"/>
+        </div>
+    </div>
+    <!-- JS FILES -->
+    <script src="uikit/js/uikit.min.js"></script>
+    <script src="uikit/js/uikit-icons.min.js"></script>
+
+    <!-- Importer notre script JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
